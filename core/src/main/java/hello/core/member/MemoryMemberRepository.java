@@ -3,6 +3,9 @@ package hello.core.member;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MemoryMemberRepository implements MemberRepository {
     // 추가학습 : HashMap vs concructHashMap(동시성 문제 해결)
     private static Map<Long, Member> store = new HashMap<>();
